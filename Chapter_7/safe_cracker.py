@@ -28,8 +28,8 @@ def main():
         # crossover
         next_try = best_attempt[:]
         # mutate
-        lock_wheel = int(randrange(0, len(combo)))
-        next_try[lock_wheel] = randint(0, len(combo)-1)
+        lock_wheel = randrange(0, len(combo))
+        next_try[lock_wheel] = randint(0, 9)
         # grade & select
         next_try_grade = fitness(combo, next_try)
         if next_try_grade > best_attempt_grade:

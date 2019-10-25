@@ -44,16 +44,16 @@ def prep_ciphertext(ciphertext):
 def split_rails(message):
     """Split message in two, always rounding UP for 1st row."""
     row_1_len = math.ceil(len(message)/2)
-    row1 = (message[:row_1_len])
-    row2 = (message[row_1_len:])
+    row1 = (message[:row_1_len]).lower()
+    row2 = (message[row_1_len:]).lower()
     return row1, row2
 
 def decrypt(row1, row2):
     """Build list with every other letter in 2 strings & print."""
     plaintext = []
     for r1, r2 in itertools.zip_longest(row1, row2):
-        plaintext.append(r1.lower())
-        plaintext.append(r2.lower())
+        plaintext.append(r1)
+        plaintext.append(r2)
     if None in plaintext:
         plaintext.pop()
     print("rail 1 = {}".format(row1))

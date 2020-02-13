@@ -1,5 +1,7 @@
 # Impractical_Python_Projects
-Errata:
+
+Errata From https://nostarch.com/impracticalpythonprojects
+
 Page 79: code output at bottom of page is based on Figure 4-3, not Figure 4-2.
 
 Page 85: In Listing 4-9, the code at wingding 5 and the following line that read:

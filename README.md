@@ -130,6 +130,5 @@ for word in word_list:
     elif len(word) == 1 and word in permissible:
         word_list_clean.append(word)
     else:
-        continue
- 
+        continue 
 print("{}".

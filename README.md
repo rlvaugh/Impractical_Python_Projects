@@ -47,15 +47,25 @@ The equations yield (x, y) values between -1 and 1.
 
 Page 218: Indentation for the listing on the page should be as follows:
 >>> from random import randint
+
 >>> trials = 100000
+
 >>> success = 0
+
 >>> for trial in range(trials):
+
            faces = set()
+           
            for rolls in range(6):
+           
                roll = randint(1, 6)
+               
                faces.add(roll)
+               
            if len(faces) == 6:
+           
                success += 1
+               
 >>> print("probability of success = {}".format(success/trials))
 probability of success = 0.01528
 

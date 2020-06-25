@@ -14,11 +14,7 @@ name = 'Voldemort'  #(tmvoordle)
 name = name.lower()
 
 # generate unique letter pairs from name
-digrams = set()
-perms = {''.join(i) for i in permutations(name)}
-for perm in perms:
-    for i in range(0, len(perm) - 1):
-        digrams.add(perm[i] + perm[i + 1])
+digrams = sorted([''.join(i) for i in permutations(name, 2)])
 print(*digrams, sep='\n')
 print("\nNumber of digrams = {}\n".format(len(digrams)))
 
@@ -30,7 +26,7 @@ for word in word_list:
         for m in re.finditer(digram, word):
             mapped[digram] += 1
 
-print("digram frequency count:")
-count = 0
-for k in mapped:
+print("Digram frequency count:")
+keys = sorted(mapped.keys())
+for k in keys:
     print("{} {}".format(k, mapped[k]))

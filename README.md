@@ -1,6 +1,6 @@
 # Impractical_Python_Projects
 
-Errata From https://nostarch.com/impracticalpythonprojects
+Errata for First Edition From https://nostarch.com/impracticalpythonprojects
 
 Page 79: code output at bottom of page is based on Figure 4-3, not Figure 4-2.
 

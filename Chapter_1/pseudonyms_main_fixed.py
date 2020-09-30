@@ -8,7 +8,7 @@ def main():
     print("A name just like Sean would pick for Gus:\n\n")
 
     first = ('Baby Oil', 'Bad News', 'Big Burps', "Bill 'Beenie-Weenie'",
-             "Bob 'Stinkbug'", 'Bowel Noises', 'Boxelder', "Bud 'Lite' ",
+             "Bob 'Stinkbug'", 'Bowel Noises', 'Boxelder', "Bud 'Lite'",
              'Butterbean', 'Buttermilk', 'Buttocks', 'Chad', 'Chesterfield',
              'Chewy', 'Chigger', 'Cinnabuns', 'Cleet', 'Cornbread',
              'Crab Meat', 'Crapps', 'Dark Skies', 'Dennis Clawhammer',

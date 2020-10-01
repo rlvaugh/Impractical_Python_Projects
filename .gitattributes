@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Auto detect text files and perform LF normalization
+# Also is "text=auto" intended only for use with * or it can also be used with specific extensions? In such a case what is the differrence?
+*.txt text=auto
+*.txt text eol=lf

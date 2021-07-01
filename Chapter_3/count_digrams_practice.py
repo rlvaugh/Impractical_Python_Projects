@@ -1,39 +1,36 @@
-"""Generate letter pairs & find their frequency in dictionary file.
+"""Generate letter pairs in Voldemort & find their frequency in a dictionary.
 
 Requires load_dictionary.py module to load an English dictionary file.
 
 """
-
 import re
 from collections import defaultdict
+from itertools import permutations
 import load_dictionary
 
 word_list = load_dictionary.load('2of4brif.txt', 'r')
 
-name = 'voldemort'
+name = 'Voldemort' #(tmvoordle)
+name = name.lower()
 
 # generate unique letter pairs from name
 digrams = set()
-for letter in name:
-    for i in range(0, len(name)):
-        pair = letter + name[i]
-        digrams.add(pair)
+perms = {''.join(i) for i in permutations(name)}
+for perm in perms:
+    for i in range(0, len(perm) - 1):
+        digrams.add(perm[i] + perm[i + 1])
 print(*sorted(digrams), sep='\n')
-print()
-print("Number of digrams = {}".format(len(digrams)))
-print()
+print("\nNumber of digrams = {}\n".format(len(digrams)))
 
 # use regular expressions to find repeating digrams in a word
-# mark each occurrence of digrams with dictionary value = 'x'
-# count number of 'x' per digram
-mapped = defaultdict(list)
+mapped = defaultdict(int)
 for word in word_list:
+    word = word.lower()
     for digram in digrams:
         for m in re.finditer(digram, word):
-            mapped[digram].append('x')
+            mapped[digram] += 1
 
 print("digram frequency count:")
 count = 0
 for k in sorted(mapped):
-    print("{} {}".format(k, len(mapped[k])))
-
+    print("{} {}".format(k, mapped[k]))

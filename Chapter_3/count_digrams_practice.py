@@ -34,6 +34,6 @@ for word in word_list:
 
 print("digram frequency count:")
 count = 0
-for i in sorted(mapped):
-    print("{} {}".format(i, len(mapped[i])))
+for k in sorted(mapped):
+    print("{} {}".format(k, len(mapped[k])))
 

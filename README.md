@@ -14,7 +14,7 @@ To download the chapter folders, use the green “Code” button near the top of
 ![image](https://user-images.githubusercontent.com/31315095/86492104-9c81fb00-bd32-11ea-97d0-96efd5863c49.png)
 
 ## Version
-The book uses Python 3.7.
+The book uses Python 3.5.
 
 ## Errata
 For updates and errata, visit https://nostarch.com/impracticalpythonprojects. Please report typos and mistakes to errata@nostarch.com.

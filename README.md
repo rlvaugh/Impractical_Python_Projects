@@ -21,3 +21,5 @@ For updates and errata, visit https://nostarch.com/impracticalpythonprojects. Pl
 
 ## Additonal Books by Author
 [*Real World Python: A Hacker's Guide to Solving Problems with Code*](https://nostarch.com/real-world-python)
+
+## https://images-na.ssl-images-amazon.com/images/I/51y1U5JPfyL._SX417_BO1,204,203,200_.jpg
